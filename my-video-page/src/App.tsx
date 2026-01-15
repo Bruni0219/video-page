@@ -5,14 +5,16 @@ import BannerImage from './assets/banner.png'
 import FooterImage from './assets/footer.jpg'
 import Category from './components/Cateogry';
 
+import styles from './styles.module.scss';
+
 function App() {
   return (
-    <div className='App'>
+    <div className={styles.app}>
       <NavBar/>
 
       <Tabs/>
       
-      <img src={BannerImage} alt="Banner"/>
+      <img className={styles.banner} src={BannerImage} alt="Banner"/>
 
       <h2>熱門</h2>
       <Category/>
@@ -23,9 +25,9 @@ function App() {
       <h2>推薦</h2>
       <Category/>
 
-      <img src={FooterImage} alt="Footer"/>
+      <img className={styles.banner} src={FooterImage} alt="Footer"/>
 
-      <footer>
+      <footer className={styles.footer}>
         <span>@Bilibili 2022</span>
       </footer>
 
