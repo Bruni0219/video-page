@@ -6,6 +6,7 @@ import FooterImage from './assets/footer.jpg'
 import Category from './components/Cateogry';
 
 import styles from './styles.module.scss';
+import { dataSource } from './constants/data';
 
 function App() {
   return (
@@ -13,17 +14,19 @@ function App() {
       <NavBar/>
 
       <Tabs/>
+
+      <div className={styles.line}></div>
       
       <img className={styles.banner} src={BannerImage} alt="Banner"/>
 
-      <h2>熱門</h2>
-      <Category/>
+      <h2>{dataSource.hot.title}</h2>
+      <Category list={dataSource.hot.list}/>
 
-      <h2>直播</h2>
-      <Category/>
+      <h2>{dataSource.live.title}</h2>
+      <Category list={dataSource.live.list}/>
 
-      <h2>推薦</h2>
-      <Category/>
+      <h2>{dataSource.recommend.title}</h2>
+      <Category list={dataSource.recommend.list}/>
 
       <img className={styles.banner} src={FooterImage} alt="Footer"/>
 
