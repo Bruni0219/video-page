@@ -29,11 +29,18 @@
     .scrollView{
         height: 100vh;
         overflow: auto;
+
+        .offset {
+            height: calc(2 * 56px)
+        }
     }
 
     h2{
         margin-top: 200px;
-        margin-left: 16px;
+    }
+
+    .content{
+        padding: 16px;
     }
 
     .banner{

@@ -16,65 +16,65 @@ export interface VideoData{
 const videoList1: VideoData[] = [
   {
     id: '11',
-    src: Video1,
+    src: Video1
   },
   {
     id: '12',
-    src: Video2,
+    src: Video2
   },
   {
     id: '13',
-    src: Video3,
+    src: Video3
   },
   {
     id: '14',
-    src: Video4,
+    src: Video4
   },
   {
     id: '15',
-    src: Video5,
+    src: Video5
   },
 ]
 
 const videoList2: VideoData[] = [
   {
     id: '21',
-    src: Video2,
+    src: Video2
   },
   {
     id: '22',
-    src: Video9,
+    src: Video9
   },
   {
     id: '23',
-    src: Video7,
+    src: Video7
   },
   {
     id: '24',
-    src: Video6,
+    src: Video6
   },
 ]
 
 const videoList3: VideoData[] = [
   {
     id: '31',
-    src: Video4,
+    src: Video4
   },
   {
     id: '32',
-    src: Video8,
+    src: Video8
   },
   {
     id: '33',
-    src: Video1,
+    src: Video1
   },
   {
     id: '34',
-    src: Video3,
+    src: Video3
   },
   {
     id: '35',
-    src: Video9,
+    src: Video9
   },
 ]
 
@@ -82,16 +82,16 @@ export const dataSource={
     hot:{
         id:'hot',
         title:'熱門',
-        list:videoList1,
+        list:videoList1
     },
     recommend:{
         id:'hot',
         title:'推薦',
-        list:videoList2,
+        list:videoList2
     },
     live:{
         id:'hot',
         title:'直播',
-        list:videoList3,
+        list:videoList3
     }
 }

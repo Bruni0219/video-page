@@ -4,10 +4,11 @@
                
     ul{
         display: flex;
-        padding: 16px;
+        padding: 16px 0;
 
         li{
-            margin-right: 16px;
+            list-style: none;
+            margin-right: 16px;            
 
             &:last-child{
                 margin-right: 0;
